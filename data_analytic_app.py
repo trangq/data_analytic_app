@@ -26,7 +26,7 @@ def draw_chart(df, chart_type, x_cols, y_cols=None):
                     col = x_cols[0]
                     counts = df[col].value_counts().reset_index()
                     counts.columns = [col, "Số lượng"]
-                    sns.barplot(x=col, y="Số lượng", data=counts, ax=ax, color="#69b3a2", ci=None))
+                    sns.barplot(x=col, y="Số lượng", data=counts, ax=ax, color="#69b3a2", ci=None)
                     for i, val in enumerate(counts["Số lượng"]):
                         ax.text(i, val + 0.01 * max(counts["Số lượng"]), str(val), ha="center", va="bottom")
                     ax.set_ylabel("Số lượng")
