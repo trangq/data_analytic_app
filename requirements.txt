@@ -1,3 +1,7 @@
 streamlit
 requests
 beautifulsoup4
+pandas
+numpy
+matplotlib
+seaborn
